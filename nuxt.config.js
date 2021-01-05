@@ -12,8 +12,18 @@ export default {
     ]
   },
 
+  // Set dev port and host
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    // CSS file in the project
+    '~/assets/css/main.css',
+    // SCSS file in the project
+    '~/assets/css/main.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -34,9 +44,16 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    proxy: true
+  },
+
+  proxy: {
+    '/prefix-url': 'proxy-url'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+    client: {ie: 10},
+  },
 }

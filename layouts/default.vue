@@ -1,8 +1,18 @@
 <template>
   <div>
+    <Header/>
     <Nuxt />
+    <Footer/>
   </div>
 </template>
+
+<script>
+  import Header from "./sections/header-base";
+  import Footer from "./sections/footer-base";
+  export default {
+    components: {Footer, Header}
+  }
+</script>
 
 <style>
 html {
