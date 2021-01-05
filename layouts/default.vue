@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Header/>
+    <HeaderBase/>
     <Nuxt />
-    <Footer/>
+    <FooterBase/>
   </div>
 </template>
 
 <script>
-  import Header from "./sections/header-base";
-  import Footer from "./sections/footer-base";
+  import HeaderBase from "./sections/header-base";
+  import FooterBase from "./sections/footer-base";
   export default {
-    components: {Footer, Header}
+    components: {FooterBase, HeaderBase}
   }
 </script>
 

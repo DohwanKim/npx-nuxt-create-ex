@@ -7,11 +7,13 @@
 </template>
 
 <script>
-    export default {
-        name: "profile"
-    }
+  export default {
+      name: "profile"
+  }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.red-text {
+  color: blue;
+}
 </style>
